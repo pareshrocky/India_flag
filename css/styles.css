@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+/* safron portion */
+.flag-top{
+    width:100%;
+    max-width:900px;
+    height:200px;
+    background-color: #f93;
+    margin:0 auto;
+    background-size: cover;
+}
+/* white portion */
+.flag-middile{
+    width:100%;
+    max-width:900px;
+    height:200px;
+    background-color: #fff;
+    margin:0 auto;
+    padding-top: 5px;
+    background-size: cover;
+}
+/* green portion */
+.flag-bottom{
+    width:100%;
+    max-width:900px;
+    height:200px;
+    background-color: #128807;
+    margin:0 auto;
+    margin-top: 5px;
+    background-size: cover;
+}
+/* Ashok chakra outer circle */
+.flag-ashok-chakra{
+    width:100%;
+    max-width:180px;
+    height:180px;
+    background-color: #fff; 
+    border-radius:50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin:auto;
+    border:10px solid #008;
+    position: relative;
+}
+/* Ashok chakra inner circle */
+.flag-inner-circle{
+    width:100%;
+    max-width:30px;
+    height:30px;
+    background-color: #008; 
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+/* 24 spoke sets */
+.flag-ashok-chakra .spokeLine{
+    height: 50%;
+   width: 2rem;
+   position: absolute;
+   top:0;
+   margin:0 auto;
+   background: #008;
+   /* rhombhus like shape */
+   clip-path: polygon(50% 0%, 58% 71%, 50% 100%, 40% 72%);
+   /* bend spokes with origin in bottom */
+   transform-origin: bottom;
+   background-size: cover;
+} 
+/* rotate spokes deg=360 deg/ total no. of spokes(360/24=15deg) */
+
+.flag-ashok-chakra .spokeLine{
+   transform: rotate(15deg)
+}
+.spokeLine:nth-child(2) {
+   transform: rotate(30deg);
+}
+.spokeLine:nth-child(3) {
+   transform: rotate(45deg)
+}
+.spokeLine:nth-child(4) {
+   transform: rotate(60deg)
+}
+.spokeLine:nth-child(5) {
+   transform: rotate(75deg)
+}
+.spokeLine:nth-child(6) {
+   transform: rotate(90deg)
+}
+.spokeLine:nth-child(7) {
+   transform: rotate(105deg)
+}
+.spokeLine:nth-child(8) {
+   transform: rotate(120deg)
+}
+.spokeLine:nth-child(9) {
+   transform: rotate(135deg)
+}
+.spokeLine:nth-child(10) {
+   transform: rotate(150deg)
+}
+.spokeLine:nth-child(11) {
+   transform: rotate(165deg)
+}
+.spokeLine:nth-child(12) {
+   transform: rotate(180deg)
+}
+.spokeLine:nth-child(13) {
+    transform: rotate(195deg)
+ }
+ .spokeLine:nth-child(14) {
+    transform: rotate(210deg)
+ }
+ .spokeLine:nth-child(15) {
+    transform: rotate(225deg)
+ }
+ .spokeLine:nth-child(16) {
+    transform: rotate(240deg)
+ }
+ .spokeLine:nth-child(17) {
+    transform: rotate(255deg)
+ }
+ .spokeLine:nth-child(18) {
+    transform: rotate(270deg)
+ }
+ .spokeLine:nth-child(19) {
+    transform: rotate(285deg)
+ }
+ .spokeLine:nth-child(20) {
+    transform: rotate(300deg)
+ }
+ .spokeLine:nth-child(21) {
+   transform: rotate(315deg)
+}
+.spokeLine:nth-child(22) {
+   transform: rotate(330deg)
+}
+.spokeLine:nth-child(23) {
+   transform: rotate(345deg)
+}
+.spokeLine:nth-child(24) {
+   transform: rotate(360deg)
+}
+
+
+
+ .flag-inner-circle .semicircle{
+   width: 7px;
+   height:86px;
+   position: absolute;
+   top:-78.5px;
+   transform-origin: bottom;
+   border: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-top:7px dotted #008;
+   outline: none;
+   margin: 0 auto ;
+ }
+
+ .flag-inner-circle .semicircle {
+   transform: rotate(7.5deg)
+}
+.semicircle:nth-child(2) {
+   transform: rotate(22.5deg)
+}
+.semicircle:nth-child(3) {
+   transform: rotate(37.5deg)
+}
+.semicircle:nth-child(4) {
+   transform: rotate(52.5deg)
+}
+.semicircle:nth-child(5) {
+   transform: rotate(67.5deg)
+}
+.semicircle:nth-child(6) {
+   transform: rotate(82.5deg)
+}
+.semicircle:nth-child(7) {
+   transform: rotate(97.5deg)
+}
+.semicircle:nth-child(8) {
+   transform: rotate(112.5deg)
+}
+.semicircle:nth-child(9) {
+   transform: rotate(127.5deg)
+}
+.semicircle:nth-child(10) {
+   transform: rotate(142.5deg)
+}
+.semicircle:nth-child(11) {
+   transform: rotate(157.5deg)
+}
+.semicircle:nth-child(12) {
+   transform: rotate(172.5deg)
+}
+.semicircle:nth-child(13) {
+    transform: rotate(187.5deg)
+ }
+ .semicircle:nth-child(14) {
+    transform: rotate(202.5deg)
+ }
+ .semicircle:nth-child(15) {
+    transform: rotate(217.5deg)
+ }
+ .semicircle:nth-child(16) {
+    transform: rotate(232.5deg)
+ }
+ .semicircle:nth-child(17) {
+    transform: rotate(247.5deg)
+ }
+ .semicircle:nth-child(18) {
+    transform: rotate(262.5deg)
+ }
+ .semicircle:nth-child(19) {
+    transform: rotate(277.5deg)
+ }
+ .semicircle:nth-child(20) {
+    transform: rotate(292.5deg)
+ }
+ .semicircle:nth-child(21) {
+   transform: rotate(307.5deg)
+}
+.semicircle:nth-child(22) {
+   transform: rotate(322.5deg)
+}
+.semicircle:nth-child(23) {
+   transform: rotate(337.5deg)
+}
+.semicircle:nth-child(24) {
+   transform: rotate(352.5deg)
+}
+
