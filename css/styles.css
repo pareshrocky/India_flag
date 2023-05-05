@@ -143,23 +143,26 @@
 .spokeLine:nth-child(24) {
    transform: rotate(360deg)
 }
-
-
-
+/* dot-sets styles */
  .flag-inner-circle .semicircle{
    width: 7px;
    height:86px;
+   /* position related to flag-inner-circle */
    position: absolute;
-   top:-78.5px;
+   /* Both top & bottom can work fine , used for setting dots inside circumference */
+   /* top:-77.75px; */
+   bottom:15px;
+   /* dot set are actually same as spokes , need to bend them at bottom  */
    transform-origin: bottom;
    border: none;
    display: flex;
    justify-content: center;
    align-items: center;
+   /* Applied only dotted border on top to these spans which will show a dot effect */
    border-top:7px dotted #008;
-   outline: none;
    margin: 0 auto ;
  }
+/* Rotate dots in such a way that each dots will end up  between two spokes. 15deg/2=7.5deg for 1st dot, then add 15deg to follow path.*/
 
  .flag-inner-circle .semicircle {
    transform: rotate(7.5deg)
