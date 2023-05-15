@@ -1,239 +1,307 @@
 @charset "UTF-8";
 
+/* container-flag */
+
+.flag-box {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   align-items: center;
+}
 /* safron portion */
-.flag-top{
-    width:100%;
-    max-width:900px;
-    height:200px;
-    background-color: #f93;
-    margin:0 auto;
-    background-size: cover;
+.flag-top {
+   /* flexible width for all devices having width more than 1000px */
+   width: 70%;
+   /* flag-basis = giving height to each items */
+   flex-basis: 200px;
+   background-color: #f93;
 }
 /* white portion */
-.flag-middile{
-    width:100%;
-    max-width:900px;
-    height:200px;
-    background-color: #fff;
-    margin:0 auto;
-    padding-top: 5px;
-    background-size: cover;
+.flag-middile {
+   width: 70%;
+   flex-basis: 200px;
+   background-color: #fff;
+padding: 5px 0;
 }
 /* green portion */
-.flag-bottom{
-    width:100%;
-    max-width:900px;
-    height:200px;
-    background-color: #128807;
-    margin:0 auto;
-    margin-top: 5px;
-    background-size: cover;
+.flag-bottom {
+   width: 70%;
+   flex-basis: 200px;
+   background-color: #128807;
 }
+
 /* Ashok chakra outer circle */
-.flag-ashok-chakra{
-    width:100%;
-    max-width:180px;
-    height:180px;
-    background-color: #fff; 
-    border-radius:50%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin:auto;
-    border:10px solid #008;
-    position: relative;
+.flag-ashok-chakra {
+   width: 180px;
+   height: 180px;
+   background-color: #fff;
+border-radius: 50%;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+margin: 0 auto;
+   border: 10px solid #008;
+   position: relative;
 }
 /* Ashok chakra inner circle */
-.flag-inner-circle{
-    width:100%;
-    max-width:30px;
-    height:30px;
-    background-color: #008; 
-    border-radius:50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+.flag-inner-circle {
+   width: 30px;
+   height: 30px;
+   background-color: #008;
+border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
 }
 /* 24 spoke sets */
-.flag-ashok-chakra .spokeLine{
-    height: 50%;
-   width: 2rem;
+.flag-ashok-chakra .spokeLine {
+   height: 50%;
+width: 1.8rem;
    position: absolute;
-   top:0;
-   margin:0 auto;
+top: 0;
+   margin: 0 auto;
    background: #008;
    /* rhombhus like shape */
    clip-path: polygon(50% 0%, 58% 71%, 50% 100%, 40% 72%);
    /* bend spokes with origin in bottom */
    transform-origin: bottom;
    background-size: cover;
-} 
+}
 /* rotate spokes deg=360 deg/ total no. of spokes(360/24=15deg) */
 
-.flag-ashok-chakra .spokeLine{
-   transform: rotate(15deg)
+.flag-ashok-chakra .spokeLine {
+   transform: rotate(15deg);
 }
 .spokeLine:nth-child(2) {
-   transform: rotate(30deg);
+transform: rotate(30deg);
 }
 .spokeLine:nth-child(3) {
-   transform: rotate(45deg)
+transform: rotate(45deg);
 }
 .spokeLine:nth-child(4) {
-   transform: rotate(60deg)
+transform: rotate(60deg);
 }
 .spokeLine:nth-child(5) {
-   transform: rotate(75deg)
+transform: rotate(75deg);
 }
 .spokeLine:nth-child(6) {
-   transform: rotate(90deg)
+transform: rotate(90deg);
 }
 .spokeLine:nth-child(7) {
-   transform: rotate(105deg)
+transform: rotate(105deg);
 }
 .spokeLine:nth-child(8) {
-   transform: rotate(120deg)
+transform: rotate(120deg);
 }
 .spokeLine:nth-child(9) {
-   transform: rotate(135deg)
+transform: rotate(135deg);
 }
 .spokeLine:nth-child(10) {
-   transform: rotate(150deg)
+transform: rotate(150deg);
 }
 .spokeLine:nth-child(11) {
-   transform: rotate(165deg)
+transform: rotate(165deg);
 }
 .spokeLine:nth-child(12) {
-   transform: rotate(180deg)
+transform: rotate(180deg);
 }
 .spokeLine:nth-child(13) {
-    transform: rotate(195deg)
- }
- .spokeLine:nth-child(14) {
-    transform: rotate(210deg)
- }
- .spokeLine:nth-child(15) {
-    transform: rotate(225deg)
- }
- .spokeLine:nth-child(16) {
-    transform: rotate(240deg)
- }
- .spokeLine:nth-child(17) {
-    transform: rotate(255deg)
- }
- .spokeLine:nth-child(18) {
-    transform: rotate(270deg)
- }
- .spokeLine:nth-child(19) {
-    transform: rotate(285deg)
- }
- .spokeLine:nth-child(20) {
-    transform: rotate(300deg)
- }
- .spokeLine:nth-child(21) {
-   transform: rotate(315deg)
+transform: rotate(195deg);
+}
+
+.spokeLine:nth-child(14) {
+transform: rotate(210deg);
+}
+
+.spokeLine:nth-child(15) {
+transform: rotate(225deg);
+}
+
+.spokeLine:nth-child(16) {
+transform: rotate(240deg);
+}
+
+.spokeLine:nth-child(17) {
+transform: rotate(255deg);
+}
+
+.spokeLine:nth-child(18) {
+transform: rotate(270deg);
+}
+
+.spokeLine:nth-child(19) {
+transform: rotate(285deg);
+}
+
+.spokeLine:nth-child(20) {
+transform: rotate(300deg);
+}
+
+.spokeLine:nth-child(21) {
+transform: rotate(315deg);
 }
 .spokeLine:nth-child(22) {
-   transform: rotate(330deg)
+transform: rotate(330deg);
 }
 .spokeLine:nth-child(23) {
-   transform: rotate(345deg)
+transform: rotate(345deg);
 }
 .spokeLine:nth-child(24) {
-   transform: rotate(360deg)
+transform: rotate(360deg);
 }
 /* dot-sets styles */
- .flag-inner-circle .semicircle{
+.flag-inner-circle .semicircle {
    width: 7px;
-   height:86px;
+height: 86px;
    /* position related to flag-inner-circle */
    position: absolute;
    /* Both top & bottom can work fine , used for setting dots inside circumference */
    /* top:-77.75px; */
-   bottom:15px;
+bottom: 15px;
    /* dot set are actually same as spokes , need to bend them at bottom  */
    transform-origin: bottom;
    border: none;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   /* Applied only dotted border on top to these spans which will show a dot effect */
-   border-top:7px dotted #008;
-   margin: 0 auto ;
- }
+/* Applied only dotted border on top to these spans which will show a dot effect */
+border-top: 7px dotted #008;
+   margin: 0 auto;
+}
 /* Rotate dots in such a way that each dots will end up  between two spokes. 15deg/2=7.5deg for 1st dot, then add 15deg to follow path.*/
 
- .flag-inner-circle .semicircle {
-   transform: rotate(7.5deg)
+.flag-inner-circle .semicircle {
+transform: rotate(7.5deg);
 }
 .semicircle:nth-child(2) {
-   transform: rotate(22.5deg)
+transform: rotate(22.5deg);
 }
 .semicircle:nth-child(3) {
-   transform: rotate(37.5deg)
+transform: rotate(37.5deg);
 }
 .semicircle:nth-child(4) {
-   transform: rotate(52.5deg)
+transform: rotate(52.5deg);
 }
 .semicircle:nth-child(5) {
-   transform: rotate(67.5deg)
+transform: rotate(67.5deg);
 }
 .semicircle:nth-child(6) {
-   transform: rotate(82.5deg)
+transform: rotate(82.5deg);
 }
 .semicircle:nth-child(7) {
-   transform: rotate(97.5deg)
+transform: rotate(97.5deg);
 }
 .semicircle:nth-child(8) {
-   transform: rotate(112.5deg)
+transform: rotate(112.5deg);
 }
 .semicircle:nth-child(9) {
-   transform: rotate(127.5deg)
+transform: rotate(127.5deg);
 }
 .semicircle:nth-child(10) {
-   transform: rotate(142.5deg)
+transform: rotate(142.5deg);
 }
 .semicircle:nth-child(11) {
-   transform: rotate(157.5deg)
+transform: rotate(157.5deg);
 }
 .semicircle:nth-child(12) {
-   transform: rotate(172.5deg)
+transform: rotate(172.5deg);
 }
 .semicircle:nth-child(13) {
-    transform: rotate(187.5deg)
- }
- .semicircle:nth-child(14) {
-    transform: rotate(202.5deg)
- }
- .semicircle:nth-child(15) {
-    transform: rotate(217.5deg)
- }
- .semicircle:nth-child(16) {
-    transform: rotate(232.5deg)
- }
- .semicircle:nth-child(17) {
-    transform: rotate(247.5deg)
- }
- .semicircle:nth-child(18) {
-    transform: rotate(262.5deg)
- }
- .semicircle:nth-child(19) {
-    transform: rotate(277.5deg)
- }
- .semicircle:nth-child(20) {
-    transform: rotate(292.5deg)
- }
- .semicircle:nth-child(21) {
-   transform: rotate(307.5deg)
-}
-.semicircle:nth-child(22) {
-   transform: rotate(322.5deg)
-}
-.semicircle:nth-child(23) {
-   transform: rotate(337.5deg)
-}
-.semicircle:nth-child(24) {
-   transform: rotate(352.5deg)
+transform: rotate(187.5deg);
 }
 
+.semicircle:nth-child(14) {
+transform: rotate(202.5deg);
+}
+
+.semicircle:nth-child(15) {
+transform: rotate(217.5deg);
+}
+
+.semicircle:nth-child(16) {
+transform: rotate(232.5deg);
+}
+
+.semicircle:nth-child(17) {
+transform: rotate(247.5deg);
+}
+
+.semicircle:nth-child(18) {
+transform: rotate(262.5deg);
+}
+
+.semicircle:nth-child(19) {
+transform: rotate(277.5deg);
+}
+
+.semicircle:nth-child(20) {
+transform: rotate(292.5deg);
+}
+
+.semicircle:nth-child(21) {
+transform: rotate(307.5deg);
+}
+.semicircle:nth-child(22) {
+transform: rotate(322.5deg);
+}
+.semicircle:nth-child(23) {
+transform: rotate(337.5deg);
+}
+.semicircle:nth-child(24) {
+transform: rotate(352.5deg);
+}
+
+@media screen and (max-width: 500px) {
+   body {
+      margin: 0;
+      /* margin given to display flag  properly near center */
+      margin-top: 30%;
+   }
+
+   .flag-top {
+      /* flexible width for all mobile devices having width < 500px */
+      min-width: 95%;
+      /* decreasing height in mobile view*/
+      flex-basis: 120px;
+   }
+
+   .flag-middile {
+      min-width: 95%;
+      flex-basis: 120px;
+   }
+
+   .flag-bottom {
+      min-width: 95%;
+      flex-basis: 120px;
+   }
+
+   .flag-ashok-chakra {
+      /* decreaing dimension of ashok-chakra w.r.t mobile viewport */
+      width: 110px;
+      height: 110px;
+      border: 6px solid #008;
+   }
+
+   .flag-inner-circle {
+      /* decreaing dimension of inner-circle w.r.t mobile viewport */
+      width: 18px;
+      height: 18px;
+   }
+
+   .flag-ashok-chakra .spokeLine {
+      /* decreaing dimension of spokes w.r.t mobile viewport */
+      width: 1.125rem;
+   }
+
+   .flag-inner-circle .semicircle {
+      /* decreaing dimension of dots w.r.t mobile viewport */
+      width: 4.5px;
+      height: 52px;
+      /* position related to flag-inner-circle */
+      position: absolute;
+      /* Both top & bottom can work fine , used for setting dots inside circumference */
+      /* top:-77.75px; */
+      bottom: 9px;
+      border-top: 5px dotted #008;
+   }
+}
