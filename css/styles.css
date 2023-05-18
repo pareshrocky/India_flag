@@ -3,54 +3,107 @@
 /* container-flag */
 
 .flag-box {
-   width: 100%;
+width: 100%;
    height: 100%;
    display: flex;
    flex-direction: column;
    justify-content: start;
    align-items: center;
 }
+
 /* safron portion */
+
 .flag-top {
-   /* flexible width for all devices having width more than 1000px */
+/* flexible width for all devices having width more than 1000px */
    width: 70%;
    /* flag-basis = giving height to each items */
    flex-basis: 200px;
    background-color: #f93;
+/* two types two make shine effect, below gradient needs no animation */
+   /* background-image: linear-gradient(180deg,
+                        transparent 0%,
+                        rgba(255, 255, 255, 0.3) 50%,
+                        transparent 100%); */
+
+   background-image: linear-gradient(to right,
+         transparent 0%,
+         rgba(255, 255, 255, 0.3) 50%,
+         transparent 100%);
+
+   background-repeat: no-repeat;
+   background-position: -100vw;
+   animation: shine 4s infinite;
 }
+
 /* white portion */
 .flag-middile {
-   width: 70%;
+width: 70%;
    flex-basis: 200px;
    background-color: #fff;
-padding: 5px 0;
+   padding: 5px 0;
+/* two types two make shine effect, below gradient needs no animation */
+   /* background-image: linear-gradient(180deg,
+            transparent 0%,
+            rgba(255, 255, 255, 0.3) 50%,
+            transparent 100%); */
+
+   background-image: linear-gradient(to right,
+         transparent 0%,
+         rgba(255, 255, 255, 0.3) 50%,
+         transparent 100%);
+   background-repeat: no-repeat;
+   background-position: -100vw;
+   animation: shine 4s infinite;
 }
 /* green portion */
 .flag-bottom {
-   width: 70%;
+width: 70%;
    flex-basis: 200px;
    background-color: #128807;
+/* two types two make shine effect, below gradient needs no animation */
+   /* background-image: linear-gradient(180deg,
+         transparent 0%,
+         rgba(255, 255, 255, 0.3) 50%,
+         transparent 100%); */
+
+   background-image: linear-gradient(to right,
+         transparent 0%,
+         rgba(255, 255, 255, 0.3) 50%,
+         transparent 100%);
+   background-repeat: no-repeat;
+   background-position: -100vw;
+   animation: shine 4s infinite;
+}
+
+@keyframes shine {
+   0% {
+      background-position: -100vw;
+   }
+
+   100% {
+      background-position: 100vw;
+   }
 }
 
 /* Ashok chakra outer circle */
 .flag-ashok-chakra {
-   width: 180px;
+width: 180px;
    height: 180px;
    background-color: #fff;
-border-radius: 50%;
+   border-radius: 50%;
    align-items: center;
    display: flex;
    justify-content: center;
-margin: 0 auto;
+   margin: 0 auto;
    border: 10px solid #008;
    position: relative;
 }
 /* Ashok chakra inner circle */
 .flag-inner-circle {
-   width: 30px;
+width: 30px;
    height: 30px;
    background-color: #008;
-border-radius: 50%;
+   border-radius: 50%;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -58,10 +111,10 @@ border-radius: 50%;
 }
 /* 24 spoke sets */
 .flag-ashok-chakra .spokeLine {
-   height: 50%;
-width: 1.8rem;
+height: 50%;
+   width: 1.8rem;
    position: absolute;
-top: 0;
+   top: 0;
    margin: 0 auto;
    background: #008;
    /* rhombhus like shape */
@@ -73,7 +126,7 @@ top: 0;
 /* rotate spokes deg=360 deg/ total no. of spokes(360/24=15deg) */
 
 .flag-ashok-chakra .spokeLine {
-   transform: rotate(15deg);
+transform: rotate(15deg);
 }
 .spokeLine:nth-child(2) {
 transform: rotate(30deg);
@@ -154,18 +207,18 @@ transform: rotate(360deg);
 }
 /* dot-sets styles */
 .flag-inner-circle .semicircle {
-   width: 7px;
-height: 86px;
+width: 7px;
+   height: 86px;
    /* position related to flag-inner-circle */
    position: absolute;
    /* Both top & bottom can work fine , used for setting dots inside circumference */
    /* top:-77.75px; */
-bottom: 15px;
+   bottom: 15px;
    /* dot set are actually same as spokes , need to bend them at bottom  */
    transform-origin: bottom;
    border: none;
-/* Applied only dotted border on top to these spans which will show a dot effect */
-border-top: 7px dotted #008;
+   /* Applied only dotted border on top to these spans which will show a dot effect */
+      border-top: 7px dotted #008;
    margin: 0 auto;
 }
 /* Rotate dots in such a way that each dots will end up  between two spokes. 15deg/2=7.5deg for 1st dot, then add 15deg to follow path.*/
@@ -252,7 +305,7 @@ transform: rotate(352.5deg);
 }
 
 @media screen and (max-width: 500px) {
-   body {
+body {
       margin: 0;
       /* margin given to display flag  properly near center */
       margin-top: 30%;
@@ -265,43 +318,38 @@ transform: rotate(352.5deg);
       flex-basis: 120px;
    }
 
-   .flag-middile {
-      min-width: 95%;
-      flex-basis: 120px;
-   }
-
-   .flag-bottom {
-      min-width: 95%;
-      flex-basis: 120px;
-   }
-
-   .flag-ashok-chakra {
-      /* decreaing dimension of ashok-chakra w.r.t mobile viewport */
-      width: 110px;
-      height: 110px;
-      border: 6px solid #008;
-   }
-
-   .flag-inner-circle {
-      /* decreaing dimension of inner-circle w.r.t mobile viewport */
-      width: 18px;
-      height: 18px;
-   }
-
-   .flag-ashok-chakra .spokeLine {
-      /* decreaing dimension of spokes w.r.t mobile viewport */
-      width: 1.125rem;
-   }
-
-   .flag-inner-circle .semicircle {
-      /* decreaing dimension of dots w.r.t mobile viewport */
-      width: 4.5px;
-      height: 52px;
+  .flag-middile {
+     min-width: 95%;
+     flex-basis: 120px;
+  }
+  .flag-bottom {
+     min-width: 95%;
+     flex-basis: 120px;
+  }
+  .flag-ashok-chakra {
+     /* decreaing dimension of ashok-chakra w.r.t mobile viewport */
+     width: 110px;
+     height: 110px;
+     border: 6px solid #008;
+  }
+  .flag-inner-circle {
+     /* decreaing dimension of inner-circle w.r.t mobile viewport */
+     width: 18px;
+     height: 18px;
+  }
+  .flag-ashok-chakra .spokeLine {
+     /* decreaing dimension of spokes w.r.t mobile viewport */
+     width: 1.125rem;
+  }
+  .flag-inner-circle .semicircle {
+     /* decreaing dimension of dots w.r.t mobile viewport */
+     width: 4.5px;
+   height: 53px;
       /* position related to flag-inner-circle */
       position: absolute;
       /* Both top & bottom can work fine , used for setting dots inside circumference */
       /* top:-77.75px; */
       bottom: 9px;
-      border-top: 5px dotted #008;
+   border-top: 4px dotted #008;
    }
 }
