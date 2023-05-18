@@ -112,13 +112,13 @@ width: 30px;
 /* 24 spoke sets */
 .flag-ashok-chakra .spokeLine {
 height: 50%;
-   width: 1.8rem;
+   width: 2.5rem;
    position: absolute;
    top: 0;
    margin: 0 auto;
    background: #008;
    /* rhombhus like shape */
-   clip-path: polygon(50% 0%, 58% 71%, 50% 100%, 40% 72%);
+   clip-path: polygon(49% 57%, 56% 0, 63% 40%, 57% 99%);
    /* bend spokes with origin in bottom */
    transform-origin: bottom;
    background-size: cover;
@@ -339,7 +339,7 @@ body {
   }
   .flag-ashok-chakra .spokeLine {
      /* decreaing dimension of spokes w.r.t mobile viewport */
-     width: 1.125rem;
+   width: 1.6rem;
   }
   .flag-inner-circle .semicircle {
      /* decreaing dimension of dots w.r.t mobile viewport */
