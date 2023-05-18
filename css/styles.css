@@ -221,87 +221,87 @@ width: 7px;
       border-top: 7px dotted #008;
    margin: 0 auto;
 }
-/* Rotate dots in such a way that each dots will end up  between two spokes. 15deg/2=7.5deg for 1st dot, then add 15deg to follow path.*/
+/* Rotate dots in such a way that each dots will end up  between two spokes.  pick a deg(9.5deg) and add 15deg to follow path.*/
 
 .flag-inner-circle .semicircle {
-transform: rotate(7.5deg);
+transform: rotate(9.5deg);
 }
 .semicircle:nth-child(2) {
-transform: rotate(22.5deg);
+transform: rotate(24.5deg);
 }
 .semicircle:nth-child(3) {
-transform: rotate(37.5deg);
+transform: rotate(39.5deg);
 }
 .semicircle:nth-child(4) {
-transform: rotate(52.5deg);
+transform: rotate(54.5deg);
 }
 .semicircle:nth-child(5) {
-transform: rotate(67.5deg);
+transform: rotate(69.5deg);
 }
 .semicircle:nth-child(6) {
-transform: rotate(82.5deg);
+transform: rotate(84.5deg);
 }
 .semicircle:nth-child(7) {
-transform: rotate(97.5deg);
+transform: rotate(99.5deg);
 }
 .semicircle:nth-child(8) {
-transform: rotate(112.5deg);
+transform: rotate(114.5deg);
 }
 .semicircle:nth-child(9) {
-transform: rotate(127.5deg);
+transform: rotate(129.5deg);
 }
 .semicircle:nth-child(10) {
-transform: rotate(142.5deg);
+transform: rotate(144.5deg);
 }
 .semicircle:nth-child(11) {
-transform: rotate(157.5deg);
+transform: rotate(159.5deg);
 }
 .semicircle:nth-child(12) {
-transform: rotate(172.5deg);
+transform: rotate(174.5deg);
 }
 .semicircle:nth-child(13) {
-transform: rotate(187.5deg);
+transform: rotate(189.5deg);
 }
 
 .semicircle:nth-child(14) {
-transform: rotate(202.5deg);
+transform: rotate(204.5deg);
 }
 
 .semicircle:nth-child(15) {
-transform: rotate(217.5deg);
+transform: rotate(219.5deg);
 }
 
 .semicircle:nth-child(16) {
-transform: rotate(232.5deg);
+transform: rotate(234.5deg);
 }
 
 .semicircle:nth-child(17) {
-transform: rotate(247.5deg);
+transform: rotate(249.5deg);
 }
 
 .semicircle:nth-child(18) {
-transform: rotate(262.5deg);
+transform: rotate(264.5deg);
 }
 
 .semicircle:nth-child(19) {
-transform: rotate(277.5deg);
+transform: rotate(279.5deg);
 }
 
 .semicircle:nth-child(20) {
-transform: rotate(292.5deg);
+transform: rotate(294.5deg);
 }
 
 .semicircle:nth-child(21) {
-transform: rotate(307.5deg);
+transform: rotate(309.5deg);
 }
 .semicircle:nth-child(22) {
-transform: rotate(322.5deg);
+transform: rotate(324.5deg);
 }
 .semicircle:nth-child(23) {
-transform: rotate(337.5deg);
+transform: rotate(339.5deg);
 }
 .semicircle:nth-child(24) {
-transform: rotate(352.5deg);
+transform: rotate(354.5deg);
 }
 
 @media screen and (max-width: 500px) {
