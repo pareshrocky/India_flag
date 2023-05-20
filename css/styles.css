@@ -1,107 +1,164 @@
 @charset "UTF-8";
 
 /* container-flag */
+body {
+   margin: 0;
+   /* text-font */
+   font-family: "Bebas Neue", sans-serif;
+   /* overflow hidden is used to hide vertical scrollbar */
+   overflow: hidden;
+}
+
+.text {
+   font-size: 48px;
+   line-height: 2rem;
+   letter-spacing: 8px;
+   font-weight: 900;
+   /* gradient flag color in text */
+   background-image: -webkit-linear-gradient(315deg, #fd7f00, #fff, #146e0c);
+   -webkit-background-clip: text;
+   text-align: center;
+   /* -webkit-text-stroke: 0.125px rgb(0, 0, 0); */
+   background-clip: text;
+   /* color is important & is set to transparent */
+   color: transparent;
+   background-size: 180% 180%;
+   animation: flag-col 10s ease-in-out infinite;
+   margin: 2% 0;
+}
+
+/* animation  */
+@keyframes flag-col {
+   0% {
+      background-position: 0% 50%;
+   }
+
+   50% {
+      background-position: 100% 50%;
+   }
+
+   100% {
+      background-position: 0% 50%;
+   }
+}
 
 .flag-box {
 width: 100%;
-   height: 100%;
+height: 100vh;
    display: flex;
    flex-direction: column;
    justify-content: start;
    align-items: center;
+padding-top: 15px;
+   /* bg color */
+   background: linear-gradient(to bottom,
+         #010a10 30%,
+         #59230b 80%,
+         #2f1107 100%);
 }
 
 /* safron portion */
 
 .flag-top {
 /* flexible width for all devices having width more than 1000px */
-   width: 70%;
+width: 58%;
    /* flag-basis = giving height to each items */
-   flex-basis: 200px;
+flex-basis: 150px;
    background-color: #f93;
-/* two types two make shine effect, below gradient needs no animation */
-   /* background-image: linear-gradient(180deg,
-                        transparent 0%,
-                        rgba(255, 255, 255, 0.3) 50%,
-                        transparent 100%); */
-
-   background-image: linear-gradient(to right,
+   /* two types two make shine effect, below gradient needs no animation */
+background-image: -webkit-linear-gradient(90deg,
          transparent 0%,
          rgba(255, 255, 255, 0.3) 50%,
-         transparent 100%);
+   transparent 100%);
 
-   background-repeat: no-repeat;
-   background-position: -100vw;
-   animation: shine 4s infinite;
+/* background-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+   transparent 100%);
+      */
+
+/* background-repeat: no-repeat; */
+   /* background-position: -100vw; */
+   /* animation: shine 4s ease infinite; */
 }
 
 /* white portion */
 .flag-middile {
-width: 70%;
-   flex-basis: 200px;
+width: 58%;
+   flex-basis: 150px;
    background-color: #fff;
    padding: 5px 0;
-/* two types two make shine effect, below gradient needs no animation */
-   /* background-image: linear-gradient(180deg,
-            transparent 0%,
-            rgba(255, 255, 255, 0.3) 50%,
-            transparent 100%); */
-
-   background-image: linear-gradient(to right,
+   /* two types two make shine effect, below gradient needs no animation */
+background-image: -webkit-linear-gradient(90deg,
          transparent 0%,
          rgba(255, 255, 255, 0.3) 50%,
-         transparent 100%);
-   background-repeat: no-repeat;
-   background-position: -100vw;
-   animation: shine 4s infinite;
+   transparent 100%);
+
+/* background-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+   transparent 100%);
+      */
+      /* background-repeat: no-repeat; */
+      /* background-position: 100vw; */
+      /* animation: shine 4s ease infinite; */
 }
 /* green portion */
 .flag-bottom {
-width: 70%;
-   flex-basis: 200px;
+/* flexible width for all devices having width more than 1000px */
+   width: 58%;
+   /* flag-basis = giving height to each items */
+   flex-basis: 150px;
    background-color: #128807;
-/* two types two make shine effect, below gradient needs no animation */
-   /* background-image: linear-gradient(180deg,
+   /* two types two make shine effect, below gradient needs no animation */
+background-image: -webkit-linear-gradient(90deg,
          transparent 0%,
          rgba(255, 255, 255, 0.3) 50%,
-         transparent 100%); */
+   transparent 100%);
 
-   background-image: linear-gradient(to right,
-         transparent 0%,
-         rgba(255, 255, 255, 0.3) 50%,
-         transparent 100%);
-   background-repeat: no-repeat;
-   background-position: -100vw;
-   animation: shine 4s infinite;
+/* background-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+   transparent 100%);
+      */
+      /* background-repeat: no-repeat; */
+      /* background-position: 100vw; */
+      /* animation: shine 4s ease infinite; */
 }
 
-@keyframes shine {
-   0% {
-      background-position: -100vw;
-   }
+/* animation for shine effect*/
+/* @keyframes shine {
+  0% {
+    background-position: -100vw;
+  }
 
-   100% {
-      background-position: 100vw;
-   }
+  100% {
+     background-position: 100vw;
+  }
 }
+
+*/
 
 /* Ashok chakra outer circle */
 .flag-ashok-chakra {
-width: 180px;
-   height: 180px;
+width: 135px;
+   height: 135px;
    background-color: #fff;
    border-radius: 50%;
    align-items: center;
    display: flex;
    justify-content: center;
    margin: 0 auto;
-   border: 10px solid #008;
+border: 6.5px solid #008;
    position: relative;
 }
 /* Ashok chakra inner circle */
 .flag-inner-circle {
-width: 30px;
-   height: 30px;
+width: 22px;
+   height: 22px;
    background-color: #008;
    border-radius: 50%;
    display: flex;
@@ -112,13 +169,13 @@ width: 30px;
 /* 24 spoke sets */
 .flag-ashok-chakra .spokeLine {
 height: 50%;
-   width: 2.5rem;
+width: 1.6rem;
    position: absolute;
    top: 0;
    margin: 0 auto;
    background: #008;
    /* rhombhus like shape */
-   clip-path: polygon(49% 57%, 56% 0, 63% 40%, 57% 99%);
+clip-path: polygon(50% 0%, 57% 25%, 50% 100%, 42% 25%);
    /* bend spokes with origin in bottom */
    transform-origin: bottom;
    background-size: cover;
@@ -207,149 +264,154 @@ transform: rotate(360deg);
 }
 /* dot-sets styles */
 .flag-inner-circle .semicircle {
-width: 7px;
-   height: 86px;
+width: 6px;
+   height: 64.5px;
    /* position related to flag-inner-circle */
    position: absolute;
    /* Both top & bottom can work fine , used for setting dots inside circumference */
    /* top:-77.75px; */
-   bottom: 15px;
+bottom: 10.5px;
    /* dot set are actually same as spokes , need to bend them at bottom  */
    transform-origin: bottom;
    border: none;
    /* Applied only dotted border on top to these spans which will show a dot effect */
-      border-top: 7px dotted #008;
+border-top: 6px dotted #008;
    margin: 0 auto;
 }
 /* Rotate dots in such a way that each dots will end up  between two spokes.  pick a deg(9.5deg) and add 15deg to follow path.*/
 
 .flag-inner-circle .semicircle {
-transform: rotate(9.5deg);
+transform: rotate(7.5deg);
 }
 .semicircle:nth-child(2) {
-transform: rotate(24.5deg);
+transform: rotate(22.5deg);
 }
 .semicircle:nth-child(3) {
-transform: rotate(39.5deg);
+transform: rotate(37.5deg);
 }
 .semicircle:nth-child(4) {
-transform: rotate(54.5deg);
+transform: rotate(52.5deg);
 }
 .semicircle:nth-child(5) {
-transform: rotate(69.5deg);
+transform: rotate(67.5deg);
 }
 .semicircle:nth-child(6) {
-transform: rotate(84.5deg);
+transform: rotate(82.5deg);
 }
 .semicircle:nth-child(7) {
-transform: rotate(99.5deg);
+transform: rotate(97.5deg);
 }
 .semicircle:nth-child(8) {
-transform: rotate(114.5deg);
+transform: rotate(112.5deg);
 }
 .semicircle:nth-child(9) {
-transform: rotate(129.5deg);
+transform: rotate(127.5deg);
 }
 .semicircle:nth-child(10) {
-transform: rotate(144.5deg);
+transform: rotate(142.5deg);
 }
 .semicircle:nth-child(11) {
-transform: rotate(159.5deg);
+transform: rotate(157.5deg);
 }
 .semicircle:nth-child(12) {
-transform: rotate(174.5deg);
+transform: rotate(172.5deg);
 }
 .semicircle:nth-child(13) {
-transform: rotate(189.5deg);
+transform: rotate(187.5deg);
 }
 
 .semicircle:nth-child(14) {
-transform: rotate(204.5deg);
+transform: rotate(202.5deg);
 }
 
 .semicircle:nth-child(15) {
-transform: rotate(219.5deg);
+transform: rotate(217.5deg);
 }
 
 .semicircle:nth-child(16) {
-transform: rotate(234.5deg);
+transform: rotate(232.5deg);
 }
 
 .semicircle:nth-child(17) {
-transform: rotate(249.5deg);
+transform: rotate(247.5deg);
 }
 
 .semicircle:nth-child(18) {
-transform: rotate(264.5deg);
+transform: rotate(262.5deg);
 }
 
 .semicircle:nth-child(19) {
-transform: rotate(279.5deg);
+transform: rotate(277.5deg);
 }
 
 .semicircle:nth-child(20) {
-transform: rotate(294.5deg);
+transform: rotate(292.5deg);
 }
 
 .semicircle:nth-child(21) {
-transform: rotate(309.5deg);
+transform: rotate(307.5deg);
 }
 .semicircle:nth-child(22) {
-transform: rotate(324.5deg);
+transform: rotate(322.5deg);
 }
 .semicircle:nth-child(23) {
-transform: rotate(339.5deg);
+transform: rotate(337.5deg);
 }
 .semicircle:nth-child(24) {
-transform: rotate(354.5deg);
+transform: rotate(352.5deg);
 }
 
 @media screen and (max-width: 500px) {
-body {
-      margin: 0;
-      /* margin given to display flag  properly near center */
-      margin-top: 30%;
+.text {
+      font-size: 2.3rem;
+      line-height: 3rem;
+      font-weight: 900;
+      margin: 0 0 5%;
    }
 
-   .flag-top {
-      /* flexible width for all mobile devices having width < 500px */
-      min-width: 95%;
-      /* decreasing height in mobile view*/
-      flex-basis: 120px;
+   .flag-box {
+      padding-top: 8%;
    }
+
+  .flag-top {
+     /* flexible width for all mobile devices having width < 500px */
+     min-width: 95%;
+     /* decreasing height in mobile view*/
+     flex-basis: 120px;
+  }
 
   .flag-middile {
-     min-width: 95%;
-     flex-basis: 120px;
+   min-width: 95%;
+      flex-basis: 120px;
   }
   .flag-bottom {
-     min-width: 95%;
-     flex-basis: 120px;
+   min-width: 95%;
+      flex-basis: 120px;
   }
   .flag-ashok-chakra {
-     /* decreaing dimension of ashok-chakra w.r.t mobile viewport */
-     width: 110px;
-     height: 110px;
-     border: 6px solid #008;
+   /* decreaing dimension of ashok-chakra w.r.t mobile viewport */
+      width: 110px;
+      height: 110px;
+   border: 5px solid #008;
   }
   .flag-inner-circle {
-     /* decreaing dimension of inner-circle w.r.t mobile viewport */
-     width: 18px;
-     height: 18px;
+   /* decreaing dimension of inner-circle w.r.t mobile viewport */
+      width: 18px;
+      height: 18px;
   }
   .flag-ashok-chakra .spokeLine {
-     /* decreaing dimension of spokes w.r.t mobile viewport */
-   width: 1.6rem;
+   /* decreaing dimension of spokes w.r.t mobile viewport */
+   width: 1.3rem;
   }
   .flag-inner-circle .semicircle {
-     /* decreaing dimension of dots w.r.t mobile viewport */
-     width: 4.5px;
-   height: 53px;
+   /* decreaing dimension of dots w.r.t mobile viewport */
+      width: 4.5px;
+      height: 53px;
       /* position related to flag-inner-circle */
       position: absolute;
       /* Both top & bottom can work fine , used for setting dots inside circumference */
       /* top:-77.75px; */
       bottom: 9px;
-   border-top: 4px dotted #008;
+      border-top: 4px dotted #008;
    }
 }
