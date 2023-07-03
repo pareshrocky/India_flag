@@ -154,6 +154,17 @@ width: 135px;
    margin: 0 auto;
 border: 6.5px solid #008;
    position: relative;
+   animation: rotate 30s linear infinite;
+   }
+   
+   @keyframes rotate {
+      0% {
+         transform: rotate(0deg);
+      }
+   
+      100% {
+         transform: rotate(360deg);
+      }
 }
 /* Ashok chakra inner circle */
 .flag-inner-circle {
