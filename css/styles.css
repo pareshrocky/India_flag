@@ -24,7 +24,7 @@ body {
    color: transparent;
    background-size: 180% 180%;
    animation: flag-col 10s ease-in-out infinite;
-   margin: 2% 0;
+   margin: 2% auto;
 }
 
 /* animation  */
