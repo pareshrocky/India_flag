@@ -89,7 +89,7 @@ body {
     height: 100%;
     border-radius: 20px;
     display: inline-block;
-    animation: vertical 1.5s ease-in-out infinite alternate;
+    animation: vertical 1.6s ease-in-out infinite alternate;
     background: linear-gradient(to bottom, #f93, #f93 33.33%, white 33.33%, white 66.66%, #128807 66.66%);
 
 }
@@ -408,23 +408,6 @@ body {
 
     .flag-element {
         background-size: 425px 100%;
-        animation: vertical 1s ease-in-out infinite alternate;
-        }
-        
-        @keyframes vertical {
-        
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-        
-            25% {
-                transform: translateY(calc(var(--displacement)*-2.5));
-            }
-        
-            75% {
-                transform: translateY(calc(var(--displacement)*2.5));
-            }
     }
 
     .flag-ashok-chakra {
